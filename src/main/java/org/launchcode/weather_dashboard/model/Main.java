@@ -13,6 +13,8 @@ public class Main {
     private int pressure;
     private int humidity;
 
+    // Add default constructor
+
     public double getTemp() {
         return temp;
     }

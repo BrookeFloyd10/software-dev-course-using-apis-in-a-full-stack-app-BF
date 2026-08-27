@@ -10,6 +10,8 @@ public class Weather {
     private String main;
     private String description;
 
+    // Add default constructor
+
     public String getMain() {
         return main;
     }

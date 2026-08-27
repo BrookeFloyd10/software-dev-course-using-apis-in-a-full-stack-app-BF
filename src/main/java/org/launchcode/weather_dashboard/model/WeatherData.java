@@ -11,6 +11,8 @@ public class WeatherData {
     private Weather[] weather;
     private Main main;
 
+    // Add default constructor
+
     public String getName() {
         return name;
     }

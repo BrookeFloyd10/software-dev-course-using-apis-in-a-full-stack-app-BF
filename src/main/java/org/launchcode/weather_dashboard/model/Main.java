@@ -8,6 +8,41 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Main {
+    private double temp;
+    private double feelsLike;
+    private int pressure;
+    private int humidity;
+
+    public double getTemp() {
+        return temp;
+    }
+
+    public void setTemp(double temp) {
+        this.temp = temp;
+    }
+    @JsonProperty("feels_like")
+    public double getFeelsLike() {
+        return feelsLike;
+    }
+    public void setFeelsLike(double feelsLike) {
+        this.feelsLike = feelsLike;
+    }
+
+    public int getPressure() {
+        return pressure;
+    }
+
+    public void setPressure(int pressure) {
+        this.pressure = pressure;
+    }
+
+    public int getHumidity() {
+        return humidity;
+    }
+
+    public void setHumidity(int humidity) {
+        this.humidity = humidity;
+    }
 
     // TODO #2
     //  Take a look at the expected JSON payload on the response for
